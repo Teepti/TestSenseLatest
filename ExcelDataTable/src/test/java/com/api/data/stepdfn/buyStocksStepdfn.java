@@ -68,32 +68,32 @@ public class buyStocksStepdfn {
 	@Then("^Select \"([^\"]*)\"$")
 	public void select(String arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("Teepti1");
+	    System.out.println("Select EquityPlaceProduct");
 	}
 
 	
 	@Then("^Enter \"([^\"]*)\" Name$")
 	public void enter_Name(String arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("Teepti2");
+		System.out.println("ExchangeType");
 	}
 
 	@Then("^Enter \"([^\"]*)\" and select \"([^\"]*)\"$")
 	public void enter_and_select(String arg1, String arg2) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("Teepti3");
+		System.out.println("StockName");
 	}
 
 	@Then("^If \"([^\"]*)\" Limit enter \"([^\"]*)\" otherwise left blank$")
 	public void if_Limit_enter_otherwise_left_blank(String arg1, String arg2) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("Teepti4");
+		System.out.println("StockName");
 	}
 	
 	@Then("^If \"([^\"]*)\" Limit enter \"([^\"]*)\" Otherwise left blank$")
 	public void if_Limit_enter_Otherwise_left_blank(String arg1, String arg2) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("Teepti5");
+		System.out.println("StockName");
 	}
 
 	@When("^Click on Sell Now button$")
