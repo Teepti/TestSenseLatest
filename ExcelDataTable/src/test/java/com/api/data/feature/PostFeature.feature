@@ -14,6 +14,5 @@ Scenario: Post a video on user wall
    And click on Post Button
    Then The video should get posted on the user wall
    And The video should have proper Thumbnail
- 
-
    
+Examples:

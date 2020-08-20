@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(glue = { "com.api.data.stepdfn" },
-				 features = {"classpath:com/api/data/feature/SellStocks.feature"},
+				 features = {"classpath:com/api/data/feature/BuyStocks.feature"},
 				 dryRun=false
 		           )
 

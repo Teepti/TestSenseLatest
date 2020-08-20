@@ -9,6 +9,11 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -16,18 +21,6 @@ import com.api.data.transform.ExcelDataToDataTable;
 
 public class buyStocksStepdfn {
 	
-	private static List<Map<String, String>> generatedTable;
-	
-	@Given("^Test Data is in specified file \"([^\"]*)\"$")
-	public void test_Data_is_in_specified_file(@Transform(ExcelDataToDataTable.class) DataTable table) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    //System.out.println(table.toString());
-	    generatedTable = table.asMaps(String.class, String.class);
-	    System.out.println(generatedTable.get(1));
-	    
-	
-	}
-
 	@Given("^User is on Login Home page$")
 	public void user_is_on_Login_Home_page() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
@@ -75,35 +68,32 @@ public class buyStocksStepdfn {
 	@Then("^Select \"([^\"]*)\"$")
 	public void select(String arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println(generatedTable.get(1).get("EquityPlaceOrderProduct") + generatedTable.get(1).get("ExchangeType"));
+	    System.out.println("Teepti1");
 	}
 
 	
 	@Then("^Enter \"([^\"]*)\" Name$")
 	public void enter_Name(String arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println(generatedTable.get(1).get("StockName"));
-		for(Map<String, String> data : generatedTable) {
-			System.out.println(data.get("StockName"));
-		}
+		System.out.println("Teepti2");
 	}
 
 	@Then("^Enter \"([^\"]*)\" and select \"([^\"]*)\"$")
 	public void enter_and_select(String arg1, String arg2) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println(generatedTable.get(1).get("BuyQuantity") + generatedTable.get(1).get("OrderValidity") + generatedTable.get(1).get("SellQuantity"));
+		System.out.println("Teepti3");
 	}
 
 	@Then("^If \"([^\"]*)\" Limit enter \"([^\"]*)\" otherwise left blank$")
 	public void if_Limit_enter_otherwise_left_blank(String arg1, String arg2) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println(generatedTable.get(1).get("OrderType") + generatedTable.get(1).get("LimitPrice"));
+		System.out.println("Teepti4");
 	}
 	
 	@Then("^If \"([^\"]*)\" Limit enter \"([^\"]*)\" Otherwise left blank$")
 	public void if_Limit_enter_Otherwise_left_blank(String arg1, String arg2) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println(generatedTable.get(1).get("OrderType") + generatedTable.get(1).get("LimitPrice"));
+		System.out.println("Teepti5");
 	}
 
 	@When("^Click on Sell Now button$")
