@@ -18,16 +18,5 @@ Scenario Outline: Buy the stock in certain quantity at market or Limit price fro
     Then  Click on Proceed button
     
 Examples:
-      
-      | EquityPlaceOrderProduct | ExchangeType | StockName | OrderValidity | SellQuantity | OrderType | LimitPrice | BuyQuantity |
-      
-      | Cash                    | NSE          | SBI       | Day           | 279.0        | LIMIT     | £55.05     | 931.0       |
-      
-      | Cash                    | BSE          | KEC       | Day           | 625.0        | MARKET    | £15.90     | 681.0       |
-      
-      | Cash                    | NSE          | INFOSYS   | Day           | 348.0        | LIMIT     | £51.44     | 489.0       |
-      
-      | Cash                    | BSE          | JP        | Day           | 468.0        | MARKET    | £59.34     | 508.0       |
-      
-      | Cash                    | NSE          | ACC       | Day           | 160.0        | LIMIT     | £89.10     | 468.0       |
+
 
