@@ -16,4 +16,4 @@ Scenario Outline: Sell the stock in certain quantity at market or Limit price fr
     And   If "<OrderType>" Limit enter "<LimitPrice>" Otherwise left blank
     When  Click on Sell Now button
     Then  Click on Proceed button
-Examples:    
+Examples:      

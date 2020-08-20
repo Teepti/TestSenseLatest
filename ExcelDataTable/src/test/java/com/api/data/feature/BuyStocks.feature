@@ -18,5 +18,3 @@ Scenario Outline: Buy the stock in certain quantity at market or Limit price fro
     Then  Click on Proceed button
     
 Examples:
-
-
